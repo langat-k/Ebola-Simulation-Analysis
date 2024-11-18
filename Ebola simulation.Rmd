@@ -2,7 +2,7 @@
 title: "linelist"
 author: "Langat"
 date: "2024-11-18"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -11,6 +11,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library (tidyverse)
+library(knitr)
 glimpse(cars)
+
+```
+```{r}
+kable(summary(cars))
+```
+Test plot of car dataset
+```{r}
+plot(cars,
+     col = "red",
+     xlab = "Speed(mph)",
+     ylab = "Distance(miles)")
 ```
 
