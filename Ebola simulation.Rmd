@@ -9,3 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+library (tidyverse)
+glimpse(cars)
+```
+
